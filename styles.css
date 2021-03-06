@@ -1,0 +1,14 @@
+header {
+    padding: 20px;
+    background: aliceblue;
+}
+
+.col-4 {
+    padding: 50px;
+    background-color: lightgoldenrodyellow;
+}
+
+.col-8 {
+    padding: 50px;
+    background-color: lightpink;
+}
