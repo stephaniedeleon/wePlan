@@ -3,10 +3,25 @@ header {
     background: aliceblue;
 }
 
-.col-4 {
-    padding: 50px;
-    background-color: lightgoldenrodyellow;
+.hidden{
+    display: none;
 }
+
+.sidenav {
+    height: 100%;
+    width: 160px;
+    position: fixed; 
+    z-index: 1; 
+    top: 0;
+    left: 0;
+    background-color: lightgoldenrodyellow;
+    overflow-x: hidden; 
+    padding-top: 20px;
+}
+
+.sidenav{
+    
+} 
 
 .col-8 {
     padding: 50px;

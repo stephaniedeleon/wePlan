@@ -9,7 +9,7 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="google-signin-client_id" content="536920808455-84f0qt0ig9feeil7i4loo82se1n617jf.apps.googleusercontent.com">
+    <meta name="google-signin-client_id" content="1034328050695-lgjdsk7sjri3mjl6p9rkn86chlnnmejp.apps.googleusercontent.com">
 
     <!-- Boostrap CS -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css" integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
@@ -28,12 +28,16 @@
 <body>
     <header>
         <!-- Sign in and Sign out Buttons-->
-        <div class="g-signin2" data-onsuccess="onSignIn"></div>
-        <button onclick="signOut();">Sign out</button>
+        <button id="signin" class="g-signin2" data-onsuccess="onSignIn"></button>
+        <button id="signout" onclick="signOut()" class="hidden">Sign out</button>
         <h2 id="welcome"></h2>
     </header>
     <div class="row">
-        <div class="col-4" id="menu">MENU</div>
+        <div class="sidenav" id="side">
+            <a href = "#">Title here</a>
+            <a href = "#">Title</a>
+            <a href = "#">Title</a>
+        </div>
         <div class="col-8" id="content">CONTENT</div>
     </div>
 </body>

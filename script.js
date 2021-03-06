@@ -8,6 +8,10 @@ function onSignIn(googleUser) {
     console.log("Image URL: " + profile.getImageUrl());
     console.log("Email: " + profile.getEmail());
 
+    // makes log in invisible and log out visible
+    document.getElementById("signin").classList.add("hidden");
+    document.getElementById("signout").classList.remove("hidden");
+
     // The ID token you need to pass to your backend:
     var id_token = googleUser.getAuthResponse().id_token;
     console.log("ID Token: " + id_token);
@@ -22,4 +26,8 @@ function signOut() {
     auth2.signOut().then(function() {
         console.log('User signed out.');
     });
+
+    // makes log-in visible and log-out invisible
+    document.getElementById("signin").classList.remove("hidden");
+    document.getElementById("signout").classList.add("hidden");
 }
