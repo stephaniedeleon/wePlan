@@ -3,6 +3,10 @@ header {
     background: aliceblue;
 }
 
+.hidden{
+    display: none;
+}
+
 .col-4 {
     padding: 50px;
     background-color: lightgoldenrodyellow;
