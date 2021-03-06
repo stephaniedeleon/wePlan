@@ -22,4 +22,9 @@ function signOut() {
     auth2.signOut().then(function() {
         console.log('User signed out.');
     });
+    // Removes Welcome
+    var welcomeEl = document.querySelector('#welcome')
+    welcomeEl.innerText = "";
 }
+
+/* Google Calendar */
