@@ -15,40 +15,108 @@ header {
     display: none;
 }
 
-.tab {
+.tab{
     font-size: 20px;
     display: inline-flex;
-    top: 0;
+    top:0;
 }
 
-#addTab {
+#signin{
+    border-radius: 5px;
+}
+
+#signout{
+    display: block;
+    width: 320px;
+    max-width: 100%;
+    margin: 0 auto;
+    margin-bottom: 0;
+    overflow: hidden;
+    position: relative;
+    transform: translatez(0);
+    text-decoration: none;
+    box-sizing: border-box;
+    font-size: 24px;
+	font-weight: normal;
+	box-shadow: 0 9px 18px rgba(0,0,0,0.2);
+}
+
+.butt {
+    text-align: center;
+	border-radius: 50px;
+    padding: 26px;
+    color: white;
+    background: lightcoral;
+    transition: all 0.2s ease-out 0s;
+}
+
+.gradient {
+  display: block;
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 100%;
+  height: 100%;
+  bottom: auto;
+  margin: auto;
+  z-index: -1;
+  background: radial-gradient(90px circle at top center, rgba(252, 5, 5, 0.8) 30%, rgba(230, 177, 33, 0));
+  transition: all 0s ease-out 0s;
+  transform: translatex(-140px);
+  animation: 18s linear 0s infinite move;
+}
+
+@keyframes move {
+	0% {
+		transform: translatex(-140px);
+	}
+	25% {
+		transform: translatex(140px);
+		opacity: 0.3;
+	}
+	50% {
+		transform: translatex(140px);
+		opacity: 1;
+		background: radial-gradient(90px circle at bottom center, rgba(238,88,63,.5) 30%, rgba(255,255,255,0));
+	}
+	75% {
+		transform: translatex(-140px);
+		opacity: 0.3;
+	}
+	100% {
+		opacity: 1;
+		transform: translatex(-140px);
+		background: radial-gradient(90px circle at top center, rgba(238,88,63,.5) 30%, rgba(255,255,255,0));
+	}
+}
+
+#addTab{
     padding: 0;
     border: none;
     background: none;
     font-size: 40px;
     position: absolute;
     right: 10px;
-    top: 85px;
+    top: 85px; 
 }
 
-#tab1 {
+#tab1{
     padding: 0;
     border: none;
     background: none;
 }
 
-#tab2 {
+#tab2{
     padding: 0;
     border: none;
     background: none;
 }
 
-#tab3 {
+#tab3{
     padding: 0;
     border: none;
     background: none;
 }
-
 
 /* Clear floats after the header */
 
@@ -86,7 +154,7 @@ header {
     padding: 0;
 }
 
-.w3-bar-item .w3-button {
+.w3-bar-item .w3-button{
     padding-left: 5px;
 }
 
@@ -105,20 +173,37 @@ header {
     user-select: none;
 }
 
-#tasks li:before {
-    content: '\2605';
-    display: inline-block;
-    color: rgb(81, 81, 218);
-    padding: 0 6px 0 0;
-    font-size: medium;
-}
-
 
 /* Darker background-color on hover */
 
 #tasks li:hover {
-    background: rgb(156, 156, 245);
+    background: mediumslateblue;
     color: white;
+}
+
+
+/* When clicked on, add a background color and strike out text */
+
+#tasks li.checked {
+    background: #888;
+    color: #fff;
+    text-decoration: line-through;
+}
+
+
+/* Add a "checked" mark when clicked on */
+
+#tasks li.checked::before {
+    content: '';
+    position: absolute;
+    border-color: #fff;
+    border-style: solid;
+    border-width: 0 2px 2px 0;
+    top: 10px;
+    left: 16px;
+    transform: rotate(45deg);
+    height: 15px;
+    width: 7px;
 }
 
 
@@ -160,8 +245,5 @@ input {
 }
 
 .addBtn:hover {
-    background-color: rgb(252, 243, 163);
+    background-color: lemonchiffon;
 }
-
-
-/* Calendar */
