@@ -36,74 +36,15 @@ function signOut() {
     welcomeEl.innerText = "";
 }
 
-/* Task */
-
-import LocalStorage from './LocalStorage.js';
-
-const storage = new LocalStorage();
-const tasks = storage.tasks;
-
-const container = document.querySelector('.tasks');
-const template = document.querySelector('#task');
-
-const createTaskForm = document.querySelector('.create-task');
-const creatTaskField = document.querySelector('.create-task_textarea');
-const createTaskButton = document.querySelector('.create-task_submit');
-
-function onCreateTask({ data }) {
-    const clone = template.contect.cloneNode(true);
-
-    const task = clone.querySelector('.task');
-    const checkbox = clone.querySelector('.task_checkbox');
-    const title = clone.querySelector('.task_text');
-    const del = clone.querySelector('.task delete');
-
-    title.innerHTML = data.value;
-    checkbox.checked = data.checked;
-
-    toggleTaskStatusClass({ checked: data.checked, task });
-
-    checkbox.addEventListener('input', () => {
-            data.checked = checkbox.checked;
-
-            toggleTasksStatusClass({ checked: data.checked, task };
-
-                storage.update(data);
-            }); title.addEventListener('input', () => {
-            data.value = title.innerHTML;
-
-            storage.update(data);
-        });
-
-        del.addEventListener('click', (e) => {
-            storage.delete(data);
-            task.remove();
-        });
-
-        container.appendChild(clone);
-    }
-
-    function toggleTaskStatusClass({ checked, task }) {
-        task.classList[checked ? 'add' : 'remove']('task--done');
-    }
-
-    tasks.forEach((data) => {
-        onCreateTask({ data });
-    });
-
-    createTaskForm.addEventListener('submit', (e) => {
-        e.preventDefault();
-
-        const value = createTaskField.value;
-
-        if (value) {
-            const data = {
-                value;
-                checked: false
-            };
-            storage.create(data);
-            onCreateTask({ data });
-            createTaskForm.reset();
-        }
-    });
+function w3_open() {
+    document.getElementById("menu").style.marginLeft = "25%";
+    document.getElementById("mySidebar").style.width = "25%";
+    document.getElementById("mySidebar").style.display = "block";
+    document.getElementById("openNav").style.display = 'none';
+}
+function w3_close(){
+    document.getElementById("menu").style.marginLeft = "0%";
+    document.getElementById("mySidebar").style.display = "none";
+    document.getElementById("openNav").style.display = "inline-block";
+}
 

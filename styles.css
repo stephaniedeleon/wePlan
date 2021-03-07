@@ -14,11 +14,16 @@ header {
     padding-top: 20px;
 }
 
-.sidenav{
-    
-} 
 
 .col-8 {
     padding: 50px;
     background-color: lightpink;
+}
+
+.main {
+    background-color: lightgoldenrodyellow;
+}
+
+#openNav{
+    background-color: lightgoldenrodyellow;
 }
