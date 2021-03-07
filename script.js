@@ -1,4 +1,4 @@
-/* Signing in and out */
+/* Signing in and sign out */
 function onSignIn(googleUser) {
     // Useful data for your client-side scripts:
     var profile = googleUser.getBasicProfile();
@@ -77,7 +77,7 @@ function newElement() {
     if (inputValue === '') {
         alert("You must write something!");
     } else {
-        document.getElementById("myUL").appendChild(li);
+        document.getElementById("tasks").appendChild(li);
     }
     document.getElementById("myInput").value = "";
 

@@ -37,26 +37,25 @@
      <ul class="nav nav-tabs" id="tabClass">
         <li class="nav-item">
             <button class="tab" id="tab1" onclick="deleteTab()">
-                <i class="bi bi-bookmark-x"></i>
+            <a class="nav-link active" aria-current="page" href="#">Project <i class="bi bi-bookmark-x"></i></a>
             </button>
-            <a class="nav-link active" aria-current="page" href="#">Project</a>
         </li>
         <li class="nav-item">
             <button class="tab" id="tab2" onclick="deleteTab()">
-                <i class="bi bi-bookmark-x"></i>
+                <a class="nav-link" href="#">Homework <i class="bi bi-bookmark-x"></i></a>
             </button>
-            <a class="nav-link" href="#">Homework</a>
         </li>
         <li class="nav-item">
             <button class="tab" id="tab3" onclick="deleteTab()">
-                <i class="bi bi-bookmark-x"></i>
+                 <a class="nav-link" href="#">Chores <i class="bi bi-bookmark-x"></i></a>
             </button>
-            <a class="nav-link" href="#">Chores</a>
         </li>
     </ul>
+
     <button id="addTab" onclick="addTab()">
         <i class="bi bi-patch-plus"></i>
     </button>
+
 </div>
 
 <body>
@@ -91,9 +90,11 @@
                 <input type="text" id="myInput" placeholder="Title...">
                 <span onclick="newElement()" class="addBtn">Add</span>
             </div>
-            <ul id="myUL">
-            </ul>
+            <div class="taskList">
+                <ul id="tasks"></ul>
+            </div>
         </div>
+
         <div class="col-lg-6">
             <iframe src="https://calendar.google.com/calendar/embed?height=600&amp;wkst=1&amp;bgcolor=%23ffffff&amp;ctz=America%2FLos_Angeles&amp;src=c3RlZnJkZWxlb24zQGdtYWlsLmNvbQ&amp;src=YWRkcmVzc2Jvb2sjY29udGFjdHNAZ3JvdXAudi5jYWxlbmRhci5nb29nbGUuY29t&amp;src=YmplZDUwOG5idXF2bXA3dDI1ZDVoMjNwaWtAZ3JvdXAuY2FsZW5kYXIuZ29vZ2xlLmNvbQ&amp;src=NGJoazZ1OGRuaGU4N2pxMmp0Y2x1cDY1OGtAZ3JvdXAuY2FsZW5kYXIuZ29vZ2xlLmNvbQ&amp;src=ZW4udXNhI2hvbGlkYXlAZ3JvdXAudi5jYWxlbmRhci5nb29nbGUuY29t&amp;src=M2J2ZTZnNGFsbGUxNXBzOG12Njh1OTVibmtAZ3JvdXAuY2FsZW5kYXIuZ29vZ2xlLmNvbQ&amp;color=%23039BE5&amp;color=%2333B679&amp;color=%239E69AF&amp;color=%23F4511E&amp;color=%230B8043&amp;color=%23E4C441"
                 style="border:solid 1px #777" width="700" height="500" frameborder="5" scrolling="no"></iframe>
