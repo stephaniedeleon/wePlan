@@ -15,6 +15,20 @@ header {
     display: none;
 }
 
+.tab{
+    font-size: 20px;
+}
+
+#addTab{
+    padding: 0;
+    border: none;
+    background: none;
+    font-size: 70px;
+    position: absolute;
+    top: 50px;
+    right: 15px;
+}
+
 #tab1{
     padding: 0;
     border: none;
@@ -40,14 +54,9 @@ ul {
     padding: 0;
 }
 
-<<<<<<< HEAD
 .w3-bar-item .w3-button{
     padding-left: 5px;
 }
-=======
-
-/* Style the list items */
->>>>>>> 3ab4a1614703fe60edfa81c059c8c63c4fd35937
 
 ul li {
     cursor: pointer;
