@@ -8,9 +8,10 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="google-signin-client_id" content="">
 
     <meta name="google-signin-client_id" content="1034328050695-lgjdsk7sjri3mjl6p9rkn86chlnnmejp.apps.googleusercontent.com">
-   
+
     <!-- Boostrap CS -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css" integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous" />
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.0/font/bootstrap-icons.css" />
@@ -23,7 +24,7 @@
     <!-- JS Script -->
     <script src="script.js"></script>
 
-    <title>shePlans</title>
+    <title>wePlan</title>
 </head>
 
 <body>
@@ -72,15 +73,18 @@
 
             <form class="create-task">
                 <textarea class="create-task_textarea" placeholder="Task title"></textarea>
-
-                <button class="btn btn--bg-blue create-task_submit" type="submit">
-                    Create
-                </button>
-            </form>
+        <div class="col-8" id="content">
         </div>
     </div>
 
 
 </body>
-
+<div id="myDIV" class="header">
+    <h2>My To Do List</h2>
+    <input type="text" id="myInput" placeholder="Title...">
+    <span onclick="newElement()" class="addBtn">Add</span>
+  </div>
+  
+  <ul id="myUL">
+  </ul>
 </html>
