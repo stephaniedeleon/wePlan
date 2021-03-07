@@ -21,9 +21,6 @@ header {
     top:0;
 }
 
-.tabs{
-    background: mistyrose;
-}
 
 #addTab{
     padding: 0;
@@ -181,4 +178,8 @@ input {
 
 .addBtn:hover {
     background-color: lemonchiffon;
+}
+
+.calendar{
+    border-radius: 10px;
 }
