@@ -89,10 +89,6 @@ function newElement() {
     }
 }
 
-function addTab() {
-
-}
-
 function deleteTab() {
     var ulElem = document.getElementById("tabClass");
     ulElem.removeChild(ulElem.childNodes[0]);
