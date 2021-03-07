@@ -24,10 +24,13 @@ header {
     background-color: lightgoldenrodyellow;
 }
 
-#openNav{
+.nav-items{
     background-color: lightgoldenrodyellow;
 }
 
+.w3-bar-item .w3-button{
+    padding-left: 5px;
+}
 
 /* Include the padding and border in an element's total width and height */
 * {
