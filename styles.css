@@ -14,6 +14,10 @@ h1 {
    
 }
 
+i {
+    color: navy
+}
+
 .row {
     margin: 20px;
 }
@@ -29,69 +33,21 @@ h1 {
 }
 
 #signin {
-    border-radius: 5px;
+    border: none;
+    background-color: mistyrose;
 }
 
 #signout {
-    display: block;
-    width: 320px;
-    margin: 0 auto;
-    margin-bottom: 0;
-    overflow: hidden;
-    position: relative;
-    transform: translatez(0);
-    text-decoration: none;
-    box-sizing: border-box;
-    font-size: 24px;
-    font-weight: normal;
-    box-shadow: 0 9px 18px rgba(0, 0, 0, 0.2);
-    text-align: center;
-    border-radius: 50px;
-    padding: 26px;
+    border-radius: 8px;
+    background-color: lightcoral;
     color: white;
-    background: lightcoral;
-    transition: all 0.2s ease-out 0s;
+    padding: 5px;
+    border: none;
 }
 
-
-.gradient {
-    display: block;
-    position: absolute;
-    top: 0;
-    right: 0;
-    width: 100%;
-    height: 100%;
-    bottom: auto;
-    margin: auto;
-    z-index: -1;
-    background: radial-gradient(90px circle at top center, rgba(252, 5, 5, 0.8) 30%, rgba(230, 177, 33, 0));
-    transition: all 0s ease-out 0s;
-    transform: translatex(-140px);
-    animation: 18s linear 0s infinite move;
-}
-
-@keyframes move {
-    0% {
-        transform: translatex(-140px);
-    }
-    25% {
-        transform: translatex(140px);
-        opacity: 0.3;
-    }
-    50% {
-        transform: translatex(140px);
-        opacity: 1;
-        background: radial-gradient(90px circle at bottom center, rgba(238, 88, 63, .5) 30%, rgba(255, 255, 255, 0));
-    }
-    75% {
-        transform: translatex(-140px);
-        opacity: 0.3;
-    }
-    100% {
-        opacity: 1;
-        transform: translatex(-140px);
-        background: radial-gradient(90px circle at top center, rgba(238, 88, 63, .5) 30%, rgba(255, 255, 255, 0));
-    }
+#signout:hover {
+    background-color: white;
+    color: lightcoral;
 }
 
 #addTab {
@@ -123,6 +79,11 @@ h1 {
 
 #myDIV {
     margin: 10px 60px;
+}
+
+.nav {
+    padding-top: 5px;
+    padding-left: 10px;
 }
 
 
@@ -185,7 +146,7 @@ h1 {
 /* Darker background-color on hover */
 
 #tasks li:hover {
-    background: mediumslateblue;
+    background: rgb(182, 171, 245);
     color: white;
 }
 
@@ -253,7 +214,7 @@ input {
 }
 
 .addBtn:hover {
-    background-color: lemonchiffon;
+    background-color: rgb(250, 243, 180);
 }
 
 
