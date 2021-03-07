@@ -19,7 +19,7 @@ function onSignIn(googleUser) {
 
     // Shows the welcome and name of user!
     var welcomeEl = document.querySelector('#welcome')
-    welcomeEl.innerText = "Welcome " + profile.getGivenName() + "!";
+    welcomeEl.innerText = "Welcome " + profile.getGivenName() + " to wePlan!";
 }
 
 function signOut() {

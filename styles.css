@@ -1,5 +1,6 @@
 body {
     background-color: lightcyan;
+    color: navy;
 }
 
 header {
@@ -7,8 +8,12 @@ header {
     background: mistyrose;
 }
 
+h1 {
+    text-align: center;
+}
+
 .row {
-    padding: 20px;
+    margin: 20px;
 }
 
 .hidden {
@@ -25,10 +30,9 @@ header {
     padding: 0;
     border: none;
     background: none;
-    font-size: 40px;
+    font-size: 35px;
     position: absolute;
-    right: 10px;
-    top: 85px;
+    right: 50px;
 }
 
 #tab1 {
@@ -49,6 +53,10 @@ header {
     background: none;
 }
 
+#myDIV {
+    margin: 10px 60px;
+}
+
 
 /* Clear floats after the header */
 
@@ -59,7 +67,7 @@ header {
 }
 
 .taskList {
-    width: 500px;
+    margin: 0px 60px;
 }
 
 .taskList ul {
@@ -165,3 +173,10 @@ input {
 
 
 /* Calendar */
+
+.calendar {
+    text-align: center;
+    background-color: lavender;
+    padding: 10px;
+    border-radius: 10px;
+}
