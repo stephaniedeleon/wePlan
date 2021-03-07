@@ -10,9 +10,20 @@ header {
 .col-4 {
     padding: 50px;
     background-color: lightgoldenrodyellow;
+    overflow-x: hidden; 
+    padding-top: 20px;
 }
+
 
 .col-8 {
     padding: 50px;
     background-color: lightpink;
+}
+
+.main {
+    background-color: lightgoldenrodyellow;
+}
+
+#openNav{
+    background-color: lightgoldenrodyellow;
 }
