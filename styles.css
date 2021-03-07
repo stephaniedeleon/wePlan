@@ -70,37 +70,20 @@ header {
     user-select: none;
 }
 
+#tasks li:before {
+    content: '\2605';
+    display: inline-block;
+    color: rgb(81, 81, 218);
+    padding: 0 6px 0 0;
+    font-size: medium;
+}
+
 
 /* Darker background-color on hover */
 
 #tasks li:hover {
-    background: mediumslateblue;
+    background: rgb(156, 156, 245);
     color: white;
-}
-
-
-/* When clicked on, add a background color and strike out text */
-
-#tasks li.checked {
-    background: #888;
-    color: #fff;
-    text-decoration: line-through;
-}
-
-
-/* Add a "checked" mark when clicked on */
-
-#tasks li.checked::before {
-    content: '';
-    position: absolute;
-    border-color: #fff;
-    border-style: solid;
-    border-width: 0 2px 2px 0;
-    top: 10px;
-    left: 16px;
-    transform: rotate(45deg);
-    height: 15px;
-    width: 7px;
 }
 
 
@@ -142,5 +125,8 @@ input {
 }
 
 .addBtn:hover {
-    background-color: lemonchiffon;
+    background-color: rgb(252, 243, 163);
 }
+
+
+/* Calendar */
