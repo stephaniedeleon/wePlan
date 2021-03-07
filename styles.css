@@ -16,9 +16,38 @@ header {
 }
 
 
+/* Clear floats after the header */
+
+.header:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+.taskList {
+    width: 500px;
+}
+
+.taskList ul {
+    width: 500px;
+    list-style: none;
+}
+
+.taskList li {
+    width: 500px;
+    height: 40px;
+}
+
+.header:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+
 /* Remove margins and padding from the list */
 
-ul {
+#tasks {
     margin: 0;
     padding: 0;
 }
@@ -26,11 +55,12 @@ ul {
 
 /* Style the list items */
 
-ul li {
+#tasks li {
     cursor: pointer;
     position: relative;
-    padding: 12px 8px 12px 40px;
     background: lavender;
+    padding-left: 10px;
+    padding: 5px;
     font-size: 18px;
     transition: 0.2s;
     /* make the list items unselectable */
@@ -41,23 +71,17 @@ ul li {
 }
 
 
-/* Set all odd list items to a different color (zebra-stripes) */
-
-ul li:nth-child(odd) {
-    background: lavenderblush;
-}
-
-
 /* Darker background-color on hover */
 
-ul li:hover {
-    background: #ddd;
+#tasks li:hover {
+    background: mediumslateblue;
+    color: white;
 }
 
 
 /* When clicked on, add a background color and strike out text */
 
-ul li.checked {
+#tasks li.checked {
     background: #888;
     color: #fff;
     text-decoration: line-through;
@@ -66,7 +90,7 @@ ul li.checked {
 
 /* Add a "checked" mark when clicked on */
 
-ul li.checked::before {
+#tasks li.checked::before {
     content: '';
     position: absolute;
     border-color: #fff;
@@ -84,9 +108,8 @@ ul li.checked::before {
 
 .close {
     position: absolute;
-    right: 0;
-    top: 0;
-    padding: 12px 16px 12px 16px;
+    right: 8px;
+    top: 8px;
 }
 
 
@@ -119,5 +142,5 @@ input {
 }
 
 .addBtn:hover {
-    background-color: ;
+    background-color: lemonchiffon;
 }
