@@ -15,6 +15,43 @@ header {
     display: none;
 }
 
+.tab{
+    font-size: 20px;
+    display: inline-flex;
+    top:0;
+}
+
+.tabs{
+    background: mistyrose;
+}
+
+#addTab{
+    padding: 0;
+    border: none;
+    background: none;
+    font-size: 40px;
+    position: absolute;
+    right: 10px;
+    top: 85px; 
+}
+
+#tab1{
+    padding: 0;
+    border: none;
+    background: none;
+}
+
+#tab2{
+    padding: 0;
+    border: none;
+    background: none;
+}
+
+#tab3{
+    padding: 0;
+    border: none;
+    background: none;
+}
 
 /* Clear floats after the header */
 
@@ -52,8 +89,9 @@ header {
     padding: 0;
 }
 
-
-/* Style the list items */
+.w3-bar-item .w3-button{
+    padding-left: 5px;
+}
 
 #tasks li {
     cursor: pointer;
