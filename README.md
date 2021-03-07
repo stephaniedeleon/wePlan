@@ -2,6 +2,10 @@
 
 This project is for AthenaHacks
 
+### WebApp Walkthough GIF
+
+<img src="wePlanDemo.gif"><br>
+
 ## Inspiration 
 Being a college student, managing your time and being aware of what you need to get done on a daily or a weekly basis is important to guarantee your success. Something our team finds useful is creating “to-do lists” to stay on top of our school work and our personal responsibilities. This resource that we use on a daily basis inspired us to create a website that we can easily access anywhere. 
 ## What it does
