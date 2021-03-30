@@ -2,6 +2,8 @@
 
 This project is for AthenaHacks
 
+Dev Post: https://devpost.com/software/weplan-zd27yx
+
 ### WebApp Walkthough GIF
 
 <img src="wePlanDemo.gif"><br>
